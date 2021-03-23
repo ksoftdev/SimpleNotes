@@ -37,3 +37,13 @@ form {
   border-bottom: 1px solid #9ccc65;
   box-shadow: 0 1px 0 0 #000;
 }
+
+.note{
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.noteslist{
+  padding: 20px;
+  margin-top: 30px;
+}
