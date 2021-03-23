@@ -15,10 +15,10 @@ const Form = () => {
 
     return (
         <div className="section">
-	    <form onSubmit={handleSubmit} className="blue-grey lighten-5">
+	    <form onSubmit={handleSubmit} className="light-green lighten-5 rounded">
 	        <h5 className="grey-text text-darken-3">Write a note...</h5>
 		
-		<div className="input-field">
+		<div className="input-field ">
       			<input id="note_title" type="text" className="validate" {...bindTitle}/>
 		        <label htmlFor="note_title">Note Tittle</label>
 		</div>

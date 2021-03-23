@@ -21,3 +21,19 @@ form {
   padding: 20px;
   margin: 60px;
 }
+
+/* label color */
+.input-field label {
+  color: #9e9e9e;
+} 
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #9ccc65;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #9ccc65;
+  box-shadow: 0 1px 0 0 #000;
+}
