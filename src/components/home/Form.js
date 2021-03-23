@@ -19,7 +19,7 @@ const Form = () => {
     return (
         <div className="section">
 	    <form onSubmit={handleSubmit} className="light-green lighten-5 rounded">
-	        <h5 className="grey-text text-darken-3">Write a note...</h5>
+	        <h5 className="grey-text text-darken-3">Write a note ...</h5>
 		
 		<div className="input-field ">
       			<input id="note_title" type="text" className="validate" {...bindTitle}/>
@@ -31,7 +31,7 @@ const Form = () => {
           		<label htmlFor="note_content">Note content</label>
     		</div>
 
-	    	<button className="btn green lighten-2">Add</button>
+	    	<button className="btn green lighten-2">Add Note</button>
 	    </form>
 	</div>
     )

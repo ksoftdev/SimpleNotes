@@ -24,15 +24,21 @@ const Note = ({ note }) => {
     
     return (
         <div className="note lime lighten-5">
-	    <div className="right-align">
-	        <i className="material-icons red-text" style={{cursor:'pointer'}} onClick={toggleFavoriteHandler}>{heartMarkup}</i>
-		<i className="material-icons" style={{cursor:'pointer'}} onClick={deleteNoteHandler}>delete</i>
+	    <div className="row">
+	    <div className="col s8 left-align">
+	        <i className="small material-icons black-text" style={{cursor:'pointer'}}>expand_less</i>
 	    </div>
+	    <div className="col s4 right-align">
+	        <i className="material-icons red-text" style={{cursor:'pointer'}} onClick={toggleFavoriteHandler}>{heartMarkup}</i>	
+	    </div>
+	    </div>
+
 	    <Link to={"/note/" + note.id}>
 	    	<h5 className="grey-text text-darken-2">{note.title}</h5>
 	    </Link>
 	    <p className="truncate">{note.content}</p>
 	    <p className="grey-text">{ moment(note.createdAt.toDate()).fromNow() }</p>
+
 	    <div className="right-align">
 	    	<Link to={`/editform/${note.id}`}>
 	        	<i className="material-icons black-text"
@@ -41,7 +47,10 @@ const Note = ({ note }) => {
 	    		>
 	    		edit</i>
 		</Link>
+	    
+	        <i className="material-icons" style={{cursor:'pointer'}} onClick={deleteNoteHandler}>delete</i>
 	    </div>
+
 	</div>
     )
 }

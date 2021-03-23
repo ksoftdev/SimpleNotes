@@ -42,7 +42,7 @@ const EditForm = () => {
           		<label className="active" htmlFor="note_content">Note content</label>
     		</div>
 
-	    	<button className="btn green lighten-2">Uodate</button>
+	    	<button className="btn green lighten-2">Update Note</button>
 	    </form>
 	</div>
     )
