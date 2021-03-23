@@ -19,7 +19,7 @@ Technologies:
 
 ## DEMO VIEW
 
-![DEMO](../main/Demo.jpg)
+![DEMO](../main/Demo.png)
 
 ## Credits
 
